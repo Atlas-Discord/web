@@ -1,0 +1,282 @@
+@media screen and (max-width: 767px) {
+  section {
+    padding: 5px 5px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto 50px;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 'item-1 item-1 item-1' 'item-2 item-3 null-2';
+  }
+  section .content-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section .footer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .btn-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside {
+    padding: 30px 10px;
+  }
+  aside .servers-section .section-grid {
+    padding: 0px 20px;
+  }
+  aside .servers-section .section-grid .card-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'item-2' 'item-1';
+  }
+  aside .servers-section .section-grid .card-grid .img-card {
+    padding: 10px 15%;
+  }
+  aside .servers-section .section-grid .card-grid .content-card {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section {
+    padding: 5px 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto 50px;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 'item-1 item-1 null-1' 'item-2 item-3 null-2';
+  }
+  section .content-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section .footer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .btn-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside {
+    padding: 30px 50px;
+  }
+  aside .servers-section .section-grid {
+    padding: 0px 20px;
+  }
+  aside .servers-section .section-grid .card-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'item-1 item-2 item-2';
+  }
+  aside .servers-section .section-grid .card-grid .content-card {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 5px 100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto 50px;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 'item-1 item-1 null-1' 'item-2 item-3 null-2';
+  }
+  section .content-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section .footer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .btn-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside {
+    padding: 30px 100px;
+  }
+  aside .servers-section .section-grid {
+    padding: 0px 30px;
+  }
+  aside .servers-section .section-grid .card-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'item-1 item-2 item-2 item-2';
+  }
+  aside .servers-section .section-grid .card-grid .content-card {
+    padding: 10px;
+  }
+}
+
+section {
+  min-height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/equipe-page/backdrop.svg");
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+section div a {
+  color: var(--bs-light);
+}
+
+section div a :hover {
+  color: var(--bs-light);
+  opacity: 0.85;
+}
+
+section .content-section {
+  grid-area: item-1;
+}
+
+section .footer-section {
+  grid-area: item-2;
+}
+
+section .btn-section {
+  grid-area: item-3;
+}
+
+aside .content-section .content-names {
+  margin: 2.5rem 0rem;
+  padding: 0.5rem  0.25rem;
+  border-radius: 0.25rem;
+  border-left: 5px solid var(--bs-primary);
+}
+
+aside .content-section .content-names ul {
+  padding: 0;
+}
+
+aside .content-section .content-names ul li {
+  list-style: none;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+aside .content-section .content-names ul li p {
+  margin: 0;
+  padding: 0;
+}
+
+aside .servers-section .section-grid .img-card {
+  grid-area: item-1;
+}
+
+aside .servers-section .section-grid .content-card {
+  grid-area: item-2;
+}
+/*# sourceMappingURL=equipe-page.css.map */
