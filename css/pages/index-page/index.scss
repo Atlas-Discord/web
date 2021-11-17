@@ -1,0 +1,190 @@
+@media screen and (max-width: 767px) {
+    section {
+        padding: 5px 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto 75px;
+        grid-template-areas: 
+        'item-1 item-1 item-1'
+        'item-2 item-3 null-2';
+
+        .content-section { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    aside {
+        padding: 0px 10px;
+
+        .card-section {
+            .body-section {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-areas: 
+                'item-1'
+                'item-2'
+                'item-3';
+                grid-gap: 10px;
+            }
+        }
+
+        .report-section {
+            padding: 0px 2.5em;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        padding: 5px 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 
+        'item-1 item-1 null-1'
+        'item-2 item-3 null-2';
+
+        .content-section { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+
+    aside {
+        padding: 0px 25px;
+
+        .card-section {
+            .body-section {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, auto);
+                grid-template-areas: 
+                'item-1 item-2'
+                'item-3 item-4';
+                grid-gap: 25px;
+            }
+        }
+
+        .report-section {
+            padding: 0px 7.5em;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 5px 75px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 
+        'item-1 item-1 null-1'
+        'item-2 item-3 null-2';
+
+        .content-section { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+
+    aside {
+        padding: 0px 75px;
+
+        .card-section {
+            .body-section {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, auto);
+                grid-template-areas: 
+                'item-1 item-2'
+                'item-3 item-4';
+                grid-gap: 75px;
+            }
+        }
+
+        .report-section {
+            padding: 0px 10em;
+        }
+    }
+}
+
+section {
+    overflow: hidden;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: right;
+    background-image: url('../../../images/index-page/backdrop.svg');
+
+    .content-section {
+        grid-area: item-1;
+    }
+
+    .footer-section {
+        grid-area: item-2;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-section {
+        grid-area: item-3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            color: var(--bs-dark);
+
+            &:hover {
+                color: currentColor;
+                opacity: 0.75;
+            }
+        }
+    }
+}   
+
+aside {
+    .invite-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-section {
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .card-section {
+        .header-section {
+            text-align: center;
+        }
+
+        .body-section {
+            .card {
+                text-align: center;
+                img {
+                    vertical-align: middle;
+                    max-width: 100%;
+                    height: auto;   
+                    border-top-left-radius: calc(0.25rem - 1px);
+                    border-top-right-radius: calc(0.25rem - 1px);
+                }
+
+                .card-title {
+                    font-size: 2rem;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
