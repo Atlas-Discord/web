@@ -206,7 +206,6 @@ body {
 }
 
 header {
-    z-index: 1000;
     .collapse-navbar {
         padding: 10px;
         position: fixed;
@@ -215,11 +214,13 @@ header {
         width: 100%;
         background: var(--bs-light);
         transition: 0.5s;
+        z-index: 5000;
 
         .header-collapse {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            
         }
 
         .content-collapse {
@@ -267,7 +268,7 @@ header {
 footer {
     color: var(--bs-body-bg);
     background: var(--bs-body-color);
-
+    
     .logo-section {
         grid-area: item-1;
     }

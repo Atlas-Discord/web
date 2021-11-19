@@ -234,10 +234,6 @@ body .copyright-name::before {
   }
 }
 
-header {
-  z-index: 1000;
-}
-
 header .collapse-navbar {
   padding: 10px;
   position: fixed;
@@ -247,6 +243,7 @@ header .collapse-navbar {
   background: var(--bs-light);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 5000;
 }
 
 header .collapse-navbar .header-collapse {
