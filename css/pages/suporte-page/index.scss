@@ -1,0 +1,119 @@
+@media screen and (max-width: 767px) {
+    section {
+        padding: 5px 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto 75px;
+        grid-template-areas: 
+        'item-1 item-1 item-1'
+        'item-2 item-3 null-2';
+
+        .content-section { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    aside {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        padding: 5px 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 
+        'item-1 item-1 null-1'
+        'item-2 item-3 null-2';
+
+        .content-section { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+
+    aside {
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 5px 75px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 
+        'item-1 item-1 null-1'
+        'item-2 item-3 null-2';
+
+        .content-section { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+
+    aside {
+        padding: 0px 75px;
+    }
+}
+
+section {
+    overflow: hidden;
+    min-height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../././../images/suporte-page/backdrop.svg');
+    background-color: #2a5298;
+    color: var(--bs-light);
+
+    .content-section {
+        grid-area: item-1;
+    }
+
+    .footer-section {
+        grid-area: item-2;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-section {
+        grid-area: item-3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            color: var(--bs-light);
+
+            &:hover {
+                color: currentColor;
+                opacity: 0.75;
+            }
+        }
+    }
+}   
+
+aside {
+    .content-section {
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .suport-section {
+        .help-section {
+            padding: 1rem 25%;
+        }
+    }
+}

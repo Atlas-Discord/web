@@ -44,6 +44,31 @@
         border-color: #0d6efd;
     }
 
+    &-light {
+        color: #000;
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+
+        &:active {
+            color: #000;
+            background-color: #f9fafb;
+            border-color: #f9fafb;
+        }
+
+        &:focus {
+            color: #000;
+            background-color: #f9fafb;
+            border-color: #f9fafb;
+            box-shadow: 0 0 0 0.25rem #f8f9fa50;
+        }
+
+        &:hover {
+            color: #000;
+            background-color: #f9fafb;
+            border-color: #f9fafb;
+        }
+    }
+
     &-outline {
         &-primary {
             color: #0d6efd;

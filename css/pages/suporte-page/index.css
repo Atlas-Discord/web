@@ -24,39 +24,9 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    z-index: 100;
-  }
-  section .img-section {
-    -ms-grid-row: 1 !important;
-    -ms-grid-column: 1 !important;
-    grid-area: item-1 !important;
-    opacity: 0.5;
-  }
-  section .footer-section {
-    -ms-grid-row: 2 !important;
-    -ms-grid-column: 1 !important;
-    grid-area: item-2 !important;
-  }
-  section .btn-section {
-    -ms-grid-row: 3 !important;
-    -ms-grid-column: 1 !important;
-    grid-area: item-3 !important;
   }
   aside {
     padding: 0px 10px;
-  }
-  aside .card-section .body-section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 'item-1' 'item-2' 'item-3';
-    grid-gap: 10px;
-  }
-  aside .report-section {
-    padding: 0px 2.5em;
   }
 }
 
@@ -69,7 +39,7 @@
         grid-template-columns: 2fr 1fr 2fr;
     -ms-grid-rows: auto 50px;
         grid-template-rows: auto 50px;
-        grid-template-areas: 'item-1 item-1 item-2' 'item-3 item-4 null-2';
+        grid-template-areas: 'item-1 item-1 null-1' 'item-2 item-3 null-2';
   }
   section .content-section {
     display: -webkit-box;
@@ -89,19 +59,6 @@
   aside {
     padding: 0px 25px;
   }
-  aside .card-section .body-section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: 'item-1 item-2' 'item-3 item-4';
-    grid-gap: 25px;
-  }
-  aside .report-section {
-    padding: 0px 7.5em;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -113,7 +70,7 @@
         grid-template-columns: 2fr 1fr 2fr;
     -ms-grid-rows: auto 50px;
         grid-template-rows: auto 50px;
-        grid-template-areas: 'item-1 item-1 item-2' 'item-3 item-4 null-2';
+        grid-template-areas: 'item-1 item-1 null-1' 'item-2 item-3 null-2';
   }
   section .content-section {
     display: -webkit-box;
@@ -133,27 +90,14 @@
   aside {
     padding: 0px 75px;
   }
-  aside .card-section .body-section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: 'item-1 item-2' 'item-3 item-4';
-    grid-gap: 75px;
-  }
-  aside .report-section {
-    padding: 0px 10em;
-  }
 }
 
 section {
   overflow: hidden;
-  min-height: 90vh;
+  min-height: 75vh;
   background-size: cover;
-  background-position: right;
-  background-image: url("../../././../images/index-page/backdrop.png");
+  background-position: center;
+  background-image: url("../../././../images/suporte-page/backdrop.svg");
   background-color: #2a5298;
   color: var(--bs-light);
 }
@@ -162,18 +106,8 @@ section .content-section {
   grid-area: item-1;
 }
 
-section .img-section {
-  grid-area: item-2;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../../../images/index-page/atlas-backdrop.svg");
-  -webkit-filter: drop-shadow(0px 0px 10px #ffffff50);
-          filter: drop-shadow(0px 0px 10px #ffffff50);
-}
-
 section .footer-section {
-  grid-area: item-3;
+  grid-area: item-2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +117,7 @@ section .footer-section {
 }
 
 section .btn-section {
-  grid-area: item-4;
+  grid-area: item-3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,46 +138,11 @@ section .btn-section a:hover {
   opacity: 0.75;
 }
 
-aside .invite-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 aside .content-section p {
   margin-bottom: 0.5rem;
 }
 
-aside .card-section .header-section {
-  text-align: center;
-}
-
-aside .card-section .body-section .card {
-  text-align: center;
-}
-
-aside .card-section .body-section .card img {
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-}
-
-aside .card-section .body-section .card .card-title {
-  font-size: 2rem;
-  font-weight: 200;
-}
-
-aside .report-section a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+aside .suport-section .help-section {
+  padding: 1rem 25%;
 }
 /*# sourceMappingURL=index.css.map */

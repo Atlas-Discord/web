@@ -15,7 +15,7 @@ body a {
 }
 
 body .logo-name {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: 900;
 }
 
@@ -25,6 +25,11 @@ body .logo-name::-moz-selection {
 
 body .logo-name::selection {
   background: transparent;
+}
+
+body .title-section {
+  font-size: 4rem;
+  font-weight: 900;
 }
 
 body .copyright-name::before {
@@ -238,7 +243,7 @@ header .collapse-navbar {
   padding: 10px;
   position: fixed;
   left: -100%;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: var(--bs-light);
   -webkit-transition: 0.5s;
@@ -295,6 +300,18 @@ header .content {
 header .content .logo {
   font-size: 2rem;
   font-weight: 800;
+  color: #252323;
+}
+
+header .content .logo::before {
+  content: '';
+  left: 0;
+  height: 100%;
+  padding: 0px 25%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../images/logoPack/fav-icon-dark.png");
 }
 
 header .content .logo::-moz-selection {
